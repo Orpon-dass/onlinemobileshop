@@ -1,0 +1,18 @@
+.sidebarItem ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.sidebarItem ul li{
+    font-size: 18px;
+}
+.subListItem li{
+list-style: none;
+color: black;
+font-size: 16px;
+}
+.sideLiastIcon{
+    font-size: 20px;
+    color: #00D19F;
+    transition: 400ms ease-in;
+}

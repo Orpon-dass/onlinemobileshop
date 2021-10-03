@@ -1,0 +1,14 @@
+.nav-wraper{
+    z-index: 1;
+}
+.navCart{
+    font-size: 30px;
+    color: #00D19F;
+}
+.seachBack{
+    background-color: #00D19F;
+}
+input[type=submit]{
+    border: none;
+    background-color:#00D19F;
+}

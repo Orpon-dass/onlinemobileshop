@@ -1,0 +1,265 @@
+// Blue print scss style
+@import "_variable.scss";
+.wrapper{
+    margin-top: 70px;
+}
+.sidebar{
+    /* background-color: burlywood; */
+    height: 100vh;
+    z-index: 2000;
+}
+.sidebartoggleone{
+    transform: translateX(-100%);
+    transition: 400ms ease-in;
+}
+.sidebaritemtwo{
+    transform: translateX(0%);
+    transition: 400ms ease-in;
+}
+.sidebarIcon{
+    font-size: 40px;
+    margin-left: 10px;
+    color: $color;
+}
+.cartOption{
+    z-index: 2000;
+}
+.searchOption{
+    z-index: 1000;   
+}
+
+// Blue print scss style
+
+//cart scss style code
+.cart{
+    z-index: 2000;
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    .cart-product{
+       border-radius: 10px;
+       .cartOne{
+           width: 100%;
+           .product-name{
+               font-size: 16px;
+               color:$paraColor;
+               font-family: $font;
+           }
+           .productdetails{
+               font-size: 14px;
+               font-family: $font;
+               i{
+                   font-size: 12px;
+               }
+           }
+       }
+    }
+    button{
+        color:$color;
+        border: none;
+    }
+    .Quantity{
+        font-size: 20px;
+    }
+}
+input[type="number"]{
+    border: none;
+    width: 40px;
+    display: inline;
+    text-align: center;
+}
+
+//cart scss style code
+ 
+// nav bar scss style code
+
+.nav-wraper{
+    z-index: 1;
+}
+.navCart{
+    font-size: 30px;
+    color:$color;
+}
+.navCart:hover{
+    color: $hover;
+}
+.seachBack{
+    background-color: $color;
+}
+.Search_top{
+    font-size: 30px;
+    color: $color;
+}
+.Search_top:hover{
+    color:$hover;
+}
+.Search_Input_Top{
+    border: 1px solid $color;
+    width: 50%;
+    height:50px;
+    border-radius:15px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.Search_Input_Top:focus{
+    border: 2px solid $color;
+    width: 50%;
+    height:50px;
+    border-radius:15px;
+    outline: none;
+}
+.Search_Input_Top_two{
+    border: 1px solid $color;
+    width: 100%;
+    height:50px;
+    border-radius:15px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;  
+    z-index: 2000;
+    transform: 300ms ease-in-out;
+}
+.Search_Input_Top_two:focus{
+    border: 2px solid $color;
+    width: 100%;
+    height:50px;
+    border-radius:15px;
+    outline: none;  
+    z-index: 2000;
+}
+// nav bar scss style code
+
+// Product  scss style code 
+@mixin parastyle($size){
+    font-family: $font;
+    font-size: $size;
+    color: $paraColor;
+}
+.productText{
+    @include parastyle(16px);
+}
+
+.col-bg{
+    background-color:$bg-color;
+}
+.productWraper{
+    h6{
+        color:rgb(155, 62, 62);
+    }
+    .product-btn-cart{
+        background-color:$indigo-700;
+        transform: 400ms ease-in-out;
+        border: none; 
+    }
+    .product-btn-cart:hover{
+         background-color:$hover;
+         transform: 400ms ease-in-out;
+    }
+     .product-btn-buy{
+        background-color:$indigo-400;
+        transform: 400ms ease-in-out;
+        border: none; 
+    }
+    .product-btn-buy:hover{
+         background-color:$indigo-500;
+         transform: 400ms ease-in-out;
+    }
+}
+
+// Product  scss style code 
+
+// Registration style code 
+.regis_head_text{
+    h1{ 
+        color: $color;
+        font-family: $font;
+    }
+}
+.form-button-text{
+    font-family: $font;
+    font-size: 20px;
+}
+.form-button{
+    button{
+        background-color:$indigo-700;
+        transform: 400ms ease-in-out;
+        border: none;
+    }
+    button:hover{
+        background-color:$hover;
+        transform: 400ms ease-in-out;
+    }
+}
+// Registration style code 
+
+//Sidebar scss style code
+.sidebarItem ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.sidebarItem ul li{
+    font-size: 18px;
+}
+.subListItem li{
+list-style: none;
+color: black;
+font-size: 16px;
+}
+.sideLiastIcon{
+    font-size: 20px;
+    color:$color;
+    transition: 400ms ease-in;
+}
+//Sidebar scss style code
+
+//single product scss style code 
+.productDetailsWraper{
+    h4{
+        font-family: $font;
+    }
+    h6{
+        font-family: $font;
+    }
+    P{
+    @include parastyle(16px);
+    }
+}
+//single product scss style code 
+
+//search css style code
+.searchWraper{
+    width: 500px; 
+}
+
+//order details
+.address{
+    font-family: $font;
+}
+//login form
+input[type="text"]{
+       border: 1px solid $color;
+       box-shadow: none !important;
+}
+input[type="text"]:focus{
+    border: 2px solid $color;
+}
+.btn-login{
+    background-color:$indigo-700;
+    box-shadow: none !important;
+    color: white;
+}
+.btn-login:focus,btn-login:hover{
+    background-color:$indigo-900;
+    box-shadow: none !important;
+    color: white;
+}
+.btn-login:hover{
+    background-color:$indigo-500;
+    box-shadow: none !important;
+    color: white;
+}
+// .test-class{
+//     background-color: red;
+// }

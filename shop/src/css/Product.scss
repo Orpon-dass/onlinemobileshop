@@ -1,0 +1,13 @@
+@import"_variable.scss";
+@mixin parastyle($size){
+    font-family: $font;
+    font-size: $size;
+    color: $paraColor;
+}
+.productText{
+    @include parastyle(16px);
+}
+
+.col-bg{
+    background-color:$bg-color;
+}

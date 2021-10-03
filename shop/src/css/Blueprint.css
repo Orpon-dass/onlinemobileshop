@@ -1,0 +1,21 @@
+.wrapper{
+    margin-top: 70px;
+}
+.sidebar{
+    /* background-color: burlywood; */
+    height: 100vh;
+    z-index: 2000;
+}
+.sidebartoggleone{
+    transform: translateX(-100%);
+    transition: 400ms ease-in;
+}
+.sidebaritemtwo{
+    transform: translateX(0%);
+    transition: 400ms ease-in;
+}
+.sidebarIcon{
+    font-size: 40px;
+    margin-left: 10px;
+    color: #00D19F;
+}
